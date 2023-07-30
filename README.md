@@ -17,3 +17,14 @@ o Code must have comments explaining what it does.
 o Service should have sane logging, configurable tracing (it should be clear what is
 happening from logs).
 o Service should use dependency injection.
+
+The solution:
+Local Sftp server:
+https://www.rebex.net/tiny-sftp-server/?utm_source=TinySftpServerApp&utm_medium=application&utm_content=MainScreenLink&utm_campaign=TinySftpServerAppLinks
+
+The project used SFTP.Wrapper. Since it did not fully meet the requirements, 
+this package was downloaded from Github (https://github.com/Cheranga/SFTP.Wrapper) 
+and supplemented with the necessary functionality
+
+Since I don't have postgresql installed, I did it with SqLite, but postgresql functionality is included. 
+You just need to comment out the quoted part of (IServiceCollectionExtensions) and change the connectionstring
